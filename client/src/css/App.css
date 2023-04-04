@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+body {
+	background-image: url("https://wallpapercave.com/wp/wp2856691.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Montserrat";
+}
+
+.main {
+	max-width: 960px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	min-height: 100vh;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+.header_button {
+	background: transparent;
+	transition: 0.1s ease-in-out;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	justify-content: space-between;
+	padding: 4px 10px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.header_button_record {
+	background: #fff;
+	transition: 0.1s ease-in-out;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+	color: #f91717;
+	justify-content: space-between;
+	padding: 4px 10px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.header_button:hover {
+	background: #fff;
+	border: 1.5px solid #fff;
+	color: #4b1589;
+}
+
+.notes__title {
+	color: #e8e0e2;
+	font-size: 38px;
+	font-family: "Montserrat";
+	align-items: left;
+	font-weight: 400;
+}
+
+.notes {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+.boxlayout {
+	padding: 10px;
+	margin: 10px;
+	align-items: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 900px) {
+	.notes {
+		grid-template-columns: repeat(2, minmax(300px, 1fr));
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.notes {
+		grid-template-columns: repeat(1, minmax(300px, 1fr));
+	}
+}
